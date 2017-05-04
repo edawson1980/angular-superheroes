@@ -1,1 +1,21 @@
+body {
+  display: inline-block;
+  margin-left: 20px;
+}
+div {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+}
+.dcBlue {
+  background-color: blue;
 
+}
+
+.marvelRed {
+  background-color: red;
+}
+
+.freeGreen {
+  background-color: green;
+}

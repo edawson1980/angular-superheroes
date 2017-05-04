@@ -8,11 +8,10 @@
 <body ng-controller="SuperConsController as vm">
   Search Directory:
   <input type="text" ng-model="vm.supeSearch">
-  <div ng-repeat="supe in vm.supes | filter: {name: vm.supeSearch}">
+  <div ng-repeat="supe in vm.supes | filter: {name: vm.supeSearch}" ng-class="{'dcBlue' : supe.group ==='DC', 'marvelRed' : supe.group ==='Marvel', 'freeGreen' : supe.group ==='None'}">
     <h2>{{supe.name}}:</h2>
     <h4>{{supe.number}}</h4>
     <h4>Affiliation: {{supe.group}}</h4>
-    <img ng-src="{{supe.img}}"/>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
