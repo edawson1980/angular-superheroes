@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <title>Superhero Phone Book</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
 </head>
 <body ng-controller="SuperConsController as vm">
-  Search Directory:
-  <input type="text" ng-model="vm.supeSearch">
+  <div class="search">
+    Search Directory:
+    <input type="text" ng-model="vm.supeSearch">
+  </div>
   <div ng-repeat="supe in vm.supes | filter: {name: vm.supeSearch}" ng-class="{'dcBlue' : supe.group ==='DC', 'marvelRed' : supe.group ==='Marvel', 'freeGreen' : supe.group ==='None'}">
     <h2>{{supe.name}}:</h2>
     <h4>{{supe.number}}</h4>

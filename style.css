@@ -1,23 +1,37 @@
 body {
   display: inline-block;
   margin-left: 20px;
+  background-image: url("http://nicksherman.com/articles/bellCentennial/modernPhonebook.jpg");
+  background-size: 100%;
 }
+
 div {
   margin: 20px;
   padding: 20px;
   width: 300px;
+  font-family: 'Cantarell', sans-serif;
+  color: #FFFAE3;
+  box-shadow: 10px 10px 5px gray;
 }
 
-
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.search {
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgba(128,0,128,0.8);
+}
 .dcBlue {
-  background-color: blue;
+  background-color: rgba(0,0,255, 0.8);
 
 }
 
 .marvelRed {
-  background-color: red;
+  background-color: rgba(255,0,0, 0.8);
 }
 
 .freeGreen {
-  background-color: green;
+  background-color: rgba(0,128,0,0.8);
 }
