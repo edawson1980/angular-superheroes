@@ -12,6 +12,9 @@
     <h2>{{supe.name}}:</h2>
     <h4>{{supe.number}}</h4>
     <h4>Affiliation: {{supe.group}}</h4>
+    <img ng-src="{{supe.img}}", ng-show="vm.viewImage[$index]">
+    <button ng-click="vm.viewImage[$index] = !vm.viewImage[$index]">Get Image</button>
+    <!-- ##this means that initially, the click value is evaluating to false, so ng-hide is applied to the image.  but then, by clicking the button, we toggle to the expression evaluating to true, which applies the show class## -->
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
